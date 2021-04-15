@@ -1,6 +1,5 @@
 package Amusement;
 
-import java.util.ArrayList;
 
 public class ConstValueClass {
 	public static final int Morning_Ticket = 1;
@@ -29,10 +28,6 @@ public class ConstValueClass {
 	public static final double Discount_Many = 0.2;
 	public static final double Discount_Pregnant = 0.15;
 	
-	public static ArrayList<Integer> ticketType_Morning	= new ArrayList<Integer>();
-	public static ArrayList<Integer> ticketType_Afternoon	= new ArrayList<Integer>();
-	public static ArrayList<Integer> ticketCount = new ArrayList<Integer>();
-	public static ArrayList<Integer> handicap = new ArrayList<Integer>();
-	public static ArrayList<Integer> price = new ArrayList<Integer>();
+	public static final String address = "C:\\Users\\admin\\Desktop\\amusement.txt";
 	
 }
