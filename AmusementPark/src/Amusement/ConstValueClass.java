@@ -28,5 +28,5 @@ public class ConstValueClass {
 	public static final double Many = 0.8;
 	public static final double Pregnant = 0.85;
 	
-	public static final String address = "C:\\Users\\admin\\Desktop\\ParkProject.csv";
+	public static final String address = "C:\\Users\\admin\\Desktop\\ParkProject.txt";
 }
