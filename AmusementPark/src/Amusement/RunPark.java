@@ -31,9 +31,9 @@ public class RunPark {
 	}
 	public void setTicketType(int n) {
 		if (n == ConstValueClass.Morning_Ticket) {
-			this.ticketType = "�ְ���";
+			this.ticketType = "주간권";
 		} else if (n == ConstValueClass.Afternoon_Ticket) {
-			this.ticketType = "�߰���";
+			this.ticketType = "야간권";
 		}
 	}
 	public String getCheckId() {
@@ -43,15 +43,15 @@ public class RunPark {
 		RunPark run = new RunPark();
 		int age = run.checkAge(checkId);
 		if (age >= ConstValueClass.Old_Age) {
-			this.checkId = "����";
+			this.checkId = "노인";
 		} else if (age < ConstValueClass.Old_Age && age >= ConstValueClass.Adult_Age) {
-			this.checkId = "�";
+			this.checkId = "어른";
 		} else if (age < ConstValueClass.Adult_Age && age >= ConstValueClass.Highteen_Age) {
-			this.checkId = "û�ҳ�";
+			this.checkId = "청소년";
 		} else if (age < ConstValueClass.Highteen_Age && age >= ConstValueClass.Young_Age) {
-			this.checkId = "���";
+			this.checkId = "어린이";
 		} else if (age < ConstValueClass.Young_Age && age >= 0) {
-			this.checkId = "����";
+			this.checkId = "유아";
 		}
 	}
 	public int getTicketCount() {
@@ -65,15 +65,15 @@ public class RunPark {
 	}
 	public void setHandicap(int handicap) {
 		if (handicap == 1) {
-			this.handicap = "����";
+			this.handicap = "없음";
 		} else if (handicap == 2) {
-			this.handicap = "�����";
+			this.handicap = "장애인";
 		} else if (handicap == 3) {
-			this.handicap = "����������";
+			this.handicap = "국가유공자";
 		} else if (handicap == 4) {
-			this.handicap = "���ڳ�";
+			this.handicap = "다자녀";
 		} else if (handicap == 5) {
-			this.handicap = "�ӻ��";
+			this.handicap = "임산부";
 		}
 	}
 	

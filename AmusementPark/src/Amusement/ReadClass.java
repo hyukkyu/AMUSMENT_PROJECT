@@ -35,14 +35,14 @@ public class ReadClass {
 			int morningSum = 0;
 			int afternoonSum = 0;
 			for(int i = 1; i < list.size(); i++) {
-				if (list.get(i).get(1).equals("�ְ���")) {
+				if (list.get(i).get(1).equals("주간권")) {
 					morningSum += Integer.parseInt(list.get(i).get(4));
-				} else if (list.get(i).get(1).equals("�߰���")) {
+				} else if (list.get(i).get(1).equals("야간권")) {
 					afternoonSum += Integer.parseInt(list.get(i).get(4));
 				}
 			}
-			System.out.println("�ְ��� ���� : " + morningSum);
-			System.out.println("�߰��� ���� : " + afternoonSum);
+			System.out.println("주간권 매출 : " + morningSum);
+			System.out.println("야간권 매출 : " + afternoonSum);
 		} catch (Exception e) {
 			
 		}
