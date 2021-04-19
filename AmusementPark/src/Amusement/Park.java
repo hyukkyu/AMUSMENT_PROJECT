@@ -21,9 +21,7 @@ public class Park {
 		
 		int ticketType;
 		String customerId;
-		int ticketCount;
-		int handicap;
-		int totalPrice;
+		int ticketCount, handicap, totalPrice;
 		int sum;
 		int continueTicket;
 		int exit;
