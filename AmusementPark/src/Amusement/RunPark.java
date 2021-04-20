@@ -19,16 +19,18 @@ public class RunPark {
 		date = new Date();
 	}
 	
-	
 	public String getYear() {
 		return year;
 	}
+	
 	public void setYear(String year) {
 		this.year = sf.format(date);
 	}
+	
 	public String getTicketType() {
 		return ticketType;
 	}
+	
 	public void setTicketType(int n) {
 		if (n == ConstValueClass.Morning_Ticket) {
 			this.ticketType = "주간권";
@@ -36,9 +38,11 @@ public class RunPark {
 			this.ticketType = "야간권";
 		}
 	}
+	
 	public String getCheckId() {
 		return checkId;
 	}
+	
 	public void setCheckId(String checkId) {
 		RunPark run = new RunPark();
 		int age = run.checkAge(checkId);
@@ -54,15 +58,19 @@ public class RunPark {
 			this.checkId = "유아";
 		}
 	}
+	
 	public int getTicketCount() {
 		return ticketCount;
 	}
+	
 	public void setTicketCount(int ticketCount) {
 		this.ticketCount = ticketCount;
 	}
+	
 	public String getHandicap() {
 		return handicap;
 	}
+	
 	public void setHandicap(int handicap) {
 		if (handicap == 1) {
 			this.handicap = "없음";
@@ -80,6 +88,7 @@ public class RunPark {
 	public int getPrice() {
 		return price;
 	}
+	
 	public void setPrice(int price) {
 		this.price = price;
 		
@@ -151,6 +160,4 @@ public class RunPark {
 		
 		return result;
 	}
-	
-	
 }

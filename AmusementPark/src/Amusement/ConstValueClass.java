@@ -5,11 +5,13 @@ public class ConstValueClass {
 	public static final int Morning_Ticket = 1;
 	public static final int Afternoon_Ticket = 2;
 	
+	
 	public static final int Morning_Adult = 56000;
 	public static final int Morning_highteen = 47000;
 	public static final int Morning_Young = 44000;
 	public static final int Morning_Old = 44000;
 	public static final int Morning_baby = 0;
+	
 	
 	public static final int Afternoon_Adult = 46000;
 	public static final int Afternoon_Highteen = 40000;
@@ -28,5 +30,5 @@ public class ConstValueClass {
 	public static final double Many = 0.8;
 	public static final double Pregnant = 0.85;
 	
-	public static final String address = "ParkProject.txt";
+	public static final String address = "C:\\Users\\admin\\Desktop\\ParkProject.txt";
 }

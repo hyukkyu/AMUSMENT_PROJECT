@@ -1,11 +1,8 @@
 package Amusement;
 
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
-
 
 public class Park {
 
@@ -17,7 +14,7 @@ public class Park {
 		WriteClass write = new WriteClass();
 		SimpleDateFormat sf = new SimpleDateFormat("yyyyMMdd");
 		Date date = new Date();
-		ReadClass read = new ReadClass();
+		
 		
 		int ticketType;
 		String customerId;
@@ -56,7 +53,6 @@ public class Park {
 			exit = input.exit();
 			if(exit == 2) {
 				write.WriteClass(arrayRun);
-				read.ReadFile();
 				break;
 			}
 		}
