@@ -14,7 +14,8 @@ public class Park {
 		WriteClass write = new WriteClass();
 		SimpleDateFormat sf = new SimpleDateFormat("yyyyMMdd");
 		Date date = new Date();
-		
+		//Database db = new Database();
+		DatabaseOutputClass out = new DatabaseOutputClass();
 		
 		int ticketType;
 		String customerId;
@@ -45,6 +46,9 @@ public class Park {
 				
 				arrayRun.add(run);
 				continueTicket = input.continueTicket();
+				//db.db(arrayRun);
+				out.addToDatabase(run);
+				
 				if(continueTicket == 2) {
 					output.printSum(arrayRun);
 					break;
@@ -53,6 +57,10 @@ public class Park {
 			exit = input.exit();
 			if(exit == 2) {
 				write.WriteClass(arrayRun);
+				out.printDatabase();
+				out.printticketType();
+				out.printdayResult();
+				out.printhandicapResult();
 				break;
 			}
 		}
