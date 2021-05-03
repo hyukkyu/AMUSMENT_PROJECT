@@ -14,7 +14,6 @@ import java.util.List;
 public class DatabaseOutputClass {
 	private Connection conn;
 	private Statement stmt;
-	//private ResultSet rset;
 	
 	public DatabaseOutputClass() {
 		try {
@@ -67,7 +66,7 @@ public class DatabaseOutputClass {
 		e.printStackTrace();
 		}
 	}
-	
+	//권종별 판매현황
 	public void printticketType() {
 		try {
 			System.out.println("==================== 권종 별 판매현황 ======================");
@@ -151,6 +150,7 @@ public class DatabaseOutputClass {
 		System.out.println("------------------------------------------\n");
 	}
 	
+	//우대권 판매 현황
 	public void printhandicapResult() {
 		System.out.println("==== 우대권 판매 현황 ====");
 		try {
